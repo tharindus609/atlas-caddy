@@ -11,18 +11,44 @@
 }
 
 bi-frost.xyz, www.bi-frost.xyz {
+    root bi-frost-site-data
     templates
-    file_server browse
+    file_server {
+        hide .git
+    }
 }
 
 portainer.bi-frost.xyz {
     reverse_proxy picore:9443
 }
 
-luthor.bi-frost.xyz {
+plex.bi-frost.xyz {
     reverse_proxy olympus:32400
+}
+
+stats.plex.bi-frost.xyz {
+    reverse_proxy olympus:8181
 }
 
 sonarr.bi-frost.xyz {
     reverse_proxy olympus:8989
+}
+
+radarr.bi-frost.xyz {
+    reverse_proxy olympus:7878
+}
+
+pihole.bi-frost.xyz {
+    reverse_proxy picore:8080
+}
+
+graph.bi-frost.xyz {
+    reverse_proxy olympus:3000
+}
+
+yspotify.bi-frost.xyz {
+    handle_path /api/* {
+        reverse_proxy olympus:7000
+    }
+    reverse_proxy olympus:7001
 }
