@@ -1,0 +1,16 @@
+bi-frost.xyz, www.bi-frost.xyz {
+      templates
+      file_server browse
+}
+
+portainer.bi-frost.xyz {
+      reverse_proxy picore:9443
+}
+
+luthor.bi-frost.xyz {
+      reverse_proxy olympus:32400
+}
+
+sonarr.bi-frost.xyz {
+      reverse_proxy olympus:8989
+}
