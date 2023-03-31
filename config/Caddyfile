@@ -22,6 +22,10 @@ portainer.bi-frost.xyz {
     reverse_proxy picore:9443
 }
 
+jellyfin.bi-frost.xyz {
+    reverse_proxy olympus:8096
+}
+
 plex.bi-frost.xyz {
     reverse_proxy olympus:32400
 }
