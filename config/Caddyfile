@@ -1,5 +1,5 @@
 {
-    email   admin@bi-frost.xyz
+    email   admin@tharindur.dev
 
     servers {
         metrics
@@ -10,47 +10,39 @@
     metrics /metrics
 }
 
-bi-frost.xyz, www.bi-frost.xyz {
-    root bi-frost-site-data
+tharindur.dev, www.tharindur.dev {
+    root tharindur-site-data
     templates
     file_server {
         hide .git
     }
 }
 
-portainer.bi-frost.xyz {
+portainer.tharindur.dev {
     reverse_proxy picore:9443
 }
 
-jellyfin.bi-frost.xyz {
-    reverse_proxy olympus:8096
-}
-
-plex.bi-frost.xyz {
+plex.tharindur.dev {
     reverse_proxy olympus:32400
 }
 
-stats.plex.bi-frost.xyz {
+stats.plex.tharindur.dev {
     reverse_proxy olympus:8181
 }
 
-sonarr.bi-frost.xyz {
+sonarr.tharindur.dev {
     reverse_proxy olympus:8989
 }
 
-radarr.bi-frost.xyz {
-    reverse_proxy olympus:7878
-}
-
-pihole.bi-frost.xyz {
+pihole.tharindur.dev {
     reverse_proxy picore:8080
 }
 
-graph.bi-frost.xyz {
+graph.tharindur.dev {
     reverse_proxy olympus:3000
 }
 
-yspotify.bi-frost.xyz {
+yspotify.tharindur.dev {
     handle_path /api/* {
         reverse_proxy olympus:7000
     }
