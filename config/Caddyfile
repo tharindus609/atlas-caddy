@@ -19,7 +19,7 @@ tharindur.dev, www.tharindur.dev {
 }
 
 portainer.tharindur.dev {
-    reverse_proxy picore:9443
+    reverse_proxy pi-core-1:9443
 }
 
 plex.tharindur.dev {
@@ -35,7 +35,7 @@ sonarr.tharindur.dev {
 }
 
 pihole.tharindur.dev {
-    reverse_proxy picore:8080
+    reverse_proxy pi-core-1:8080
 }
 
 graph.tharindur.dev {
