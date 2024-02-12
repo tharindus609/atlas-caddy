@@ -26,7 +26,7 @@ plex.tharindur.dev {
     reverse_proxy olympus:32400
 }
 
-stats.plex.tharindur.dev {
+plex-stats.tharindur.dev {
     reverse_proxy olympus:8181
 }
 
@@ -47,4 +47,8 @@ yspotify.tharindur.dev {
         reverse_proxy olympus:7000
     }
     reverse_proxy olympus:7001
+}
+
+nc.tharindur.dev {
+    reverse_proxy olympus:8080
 }
